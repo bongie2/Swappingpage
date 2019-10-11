@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      KASI DETECTIVES
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container" id="container">
+    <div class="form-container sign-up-container">
+      <form action="#">
+        <h1>Create Account</h1>
+        <div class="social-container">
+          <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+          <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <span>or use your email for registration</span>
+        <ion-input type="text" placeholder="Name"></ion-input>
+        <ion-input type="email" placeholder="Email"></ion-input>
+        <ion-input type="password" placeholder="Password"></ion-input>
+        <ion-input type="password" placeholder="ConfirmPassword"></ion-input>
+        <ion-button (click) = "swapper()">Sign Up</ion-button>
+      </form>
+    </div>
+
+    <div class="form-container sign-in-container">
+      <form action="#">
+        <h1>Sign in</h1>
+        <div class="social-container">
+          <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+          <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <span>or use your email for registration</span>
+        <ion-input type="email" placeholder="Email"></ion-input>
+        <ion-input type="password" placeholder="Password"></ion-input>
+        <a href="#">Forgot your password?</a>
+        <ion-button (click)="swapper()">Sign In</ion-button>
+      </form>
+    </div>
+
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>Welcome Back!</h1>
+          <p>
+            To keep connected with us please login with your personal info.
+          </p>
+          <ion-button class="ghost" id="signIn">Sign In</ion-button>
+        </div>
+        <div class="overlay-panel overlay-right">
+            <h1>Hello!</h1>
+            <p>
+              Enter your personal details and start journey with us.
+            </p>
+            <ion-button class="ghost" id="signUp" >Sign Up</ion-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
